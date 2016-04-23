@@ -12,6 +12,7 @@ namespace AzureSample.Controllers
         public ActionResult Index()
         {
             ViewBag.AppName = ConfigurationManager.AppSettings["AppName"];
+            ViewBag.DeploymentVersion = ConfigurationManager.AppSettings["DeploymentVersion"];
             return View();
         }
 
